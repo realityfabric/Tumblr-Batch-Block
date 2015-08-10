@@ -10,6 +10,6 @@
         "scripts": ["jquery.min.js"]
     },
     "permissions": [
-        "tabs", "http://*/*", "https://*/*"
+        "tabs", "http://www.tumblr.com/settings/blog/*", "https://www.tumblr.com/settings/blog/*"
     ]
 }
