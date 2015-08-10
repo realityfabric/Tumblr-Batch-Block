@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('click-me').addEventListener('click', 
+    document.getElementById('button').addEventListener('click', 
 		function () { 
 			chrome.tabs.executeScript(null, {file: "jquery.min.js"}, 
 				function () {
