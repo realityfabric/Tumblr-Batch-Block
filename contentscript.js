@@ -16,7 +16,6 @@ var str = window.prompt("Please input comma separated list of users to be blocke
 var str = str.replace(" ", "");
 
 var arr = str.split(",");
-alert (arr);
 
 var activate = function () {
 	console.log ("activate");
