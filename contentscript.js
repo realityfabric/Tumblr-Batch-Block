@@ -12,7 +12,7 @@ var block = function (blog) {
 	}, 2000);
 }
 
-var str = window.prompt("Please input comma separated list of users to be blocked","defaultText");
+var str = window.prompt("Please input comma separated list of users to be blocked","");
 var str = str.replace(" ", "");
 
 var arr = str.split(",");
