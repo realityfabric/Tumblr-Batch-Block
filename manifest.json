@@ -1,7 +1,7 @@
 {
     "name": "Tumblr Batch Block",
     "manifest_version": 2,
-    "version": "1.0",
+    "version": "1.1",
     "description": "Block a comma separated list of bloggers",
     "browser_action": {
         "default_popup": "popup.html"
