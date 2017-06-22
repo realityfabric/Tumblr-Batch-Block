@@ -1,6 +1,6 @@
 # Tumblr-Batch-Block
 
-1. Install Tumblr Batch Block
+1. Install Tumblr Batch Block ([Chrome Store link](https://chrome.google.com/webstore/detail/tumblr-batch-block/kojokoeagiinigcjnggifldgdphhpedh))
 
 2. Navigate to your settings page on Tumblr.com
 
@@ -10,4 +10,4 @@
 
 5. Enter a comma separated list of blog names (eg "staff, testblog, gettingblocked")
 
-6. Do not close the tab until blocking is complete (you can still do things in other tabs though)
+6. Do not close the tab until blocking is complete. You can switch to another tab and continue browsing while the extension does its work.
