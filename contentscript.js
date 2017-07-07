@@ -9,7 +9,7 @@ var block = function (blog) {
 	$("#blocked_blogs > .accordion_content > .block-input > .text > #block").val(blog);
 	setTimeout(function () {
 		$("#blocked_blogs > .accordion_content > .block-input > .block-button").click();
-	}, 2000);
+	}, 500);
 }
 
 var str = window.prompt("Please input comma separated list of users to be blocked","");
@@ -29,7 +29,7 @@ var activate = function () {
 			clearInterval(inter);
 			console.log ("exit");
 		}
-	}, 5000);
+	}, 1100);
 }
 
 activate ();
