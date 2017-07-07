@@ -2,7 +2,7 @@
 
 This extension allows you to block many Tumblr bloggers at a time, and save time doing it. You can input lists you've created yourself, or use lists others have created and shared with you.
 
-## Installation
+## Installation and Use
 
 1. Install Tumblr Batch Block ([Chrome Store link](https://chrome.google.com/webstore/detail/tumblr-batch-block/kojokoeagiinigcjnggifldgdphhpedh).)
 
