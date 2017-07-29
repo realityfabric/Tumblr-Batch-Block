@@ -3,6 +3,7 @@
     "manifest_version": 2,
     "version": "1.3",
     "description": "Block a comma separated list of bloggers",
+    "icons": {"128": "icon_128.png"},
     "browser_action": {
         "default_popup": "popup.html"
     },
@@ -13,4 +14,3 @@
         "tabs", "http://www.tumblr.com/settings/blog/*", "https://www.tumblr.com/settings/blog/*"
     ]
 }
-"icons": {"128": "icon_128.png"},
