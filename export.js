@@ -32,3 +32,7 @@ var getBlockList = function () {
 
     return blocklist;
 }
+
+expandBlockList(function() {
+	console.log(getBlockList()); // needs to return a user readable (and copyable) format
+});
