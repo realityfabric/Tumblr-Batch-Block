@@ -12,6 +12,23 @@ var expandBlockList = function () {
                 clearInterval(expandInterval);
                 alert('COMPLETE');
             }
-        }, 500);
+        }, 10);
     });
+}
+
+// getBlockList gathers all the blog names in a user's block list
+// It returns the list as an array
+var getBlockList = function () {
+    var i = 1;
+    var blocklist = [];
+
+    var blog = jQuery('#blocked_blogs > div.accordion_content.show > ul > li:nth-child(' + i++ + ') > div.blog-info > a.name');
+
+    while (blog !== undefined && blog[0] !== undefined) {
+        blocklist.push(blog[0].innerText);
+
+        var blog = jQuery('#blocked_blogs > div.accordion_content.show > ul > li:nth-child(' + i++ + ') > div.blog-info > a.name');
+    }
+
+    return blocklist;
 }
