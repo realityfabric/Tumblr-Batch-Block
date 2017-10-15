@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('button').addEventListener('click',
+    document.getElementById('blockButton').addEventListener('click',
 		function () {
 			chrome.tabs.executeScript(null, {file: "jquery.min.js"},
 				function () {
@@ -8,4 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
             );
         }
     );
+
+    document.getElementById('exportBlockListButton').addEventListener('click',
+		function () {
+			chrome.tabs.executeScript(null, {file: 'jquery.min.js'},
+				function () {
+					chrome.tabs.executeScript(null, {file: 'export.js'});
+				}
+			);
+		}
+	);
 });

@@ -34,5 +34,5 @@ var getBlockList = function () {
 }
 
 expandBlockList(function() {
-	console.log(getBlockList()); // needs to return a user readable (and copyable) format
+    console.log(getBlockList()); // needs to return a user readable (and copyable) format
 });
