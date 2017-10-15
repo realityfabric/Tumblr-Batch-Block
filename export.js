@@ -1,7 +1,7 @@
 // expandBlockList clicks the button which opens the blocklist
 // Then it clicks the 'Show More' button until it is no longer visible
 // The 'Show More' button still exists, and will loop through the block list if you continue to click it.
-var expandBlockList = function () {
+var expandBlockList = function (callback) {
     $('document').ready( function () {
         $("#blocked_blogs > .accordion_trigger_wrapper > .accordion_trigger").click();
 
@@ -10,9 +10,9 @@ var expandBlockList = function () {
                 $('#blocked_blogs > div.accordion_content.show > button').click();
             } else {
                 clearInterval(expandInterval);
-                alert('COMPLETE');
+                callback();
             }
-        }, 10);
+        }, 500);
     });
 }
 
