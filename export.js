@@ -34,5 +34,14 @@ var getBlockList = function () {
 }
 
 expandBlockList(function() {
-    console.log(getBlockList()); // needs to return a user readable (and copyable) format
+    var blocklist = JSON.stringify(getBlockList());
+
+    blocklist = blocklist.replace('[','');
+    blocklist = blocklist.replace(']','');
+
+    while (blocklist.indexOf('\"') !== -1) {
+		blocklist = blocklist.replace('\"','');
+	}
+
+    prompt("Your blocklist:", blocklist);
 });
