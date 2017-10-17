@@ -1,7 +1,7 @@
 {
     "name": "Tumblr Batch Block",
     "manifest_version": 2,
-    "version": "1.5.2",
+    "version": "1.5.3",
     "description": "Block a comma separated list of bloggers",
     "icons": {"128": "icon_128.png"},
     "browser_action": {

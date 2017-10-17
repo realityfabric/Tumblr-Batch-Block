@@ -1,6 +1,7 @@
 body {
     width:450px;
     text-align: left;
+    background-color: lightblue;
 }
 
 h1 {
@@ -8,7 +9,11 @@ h1 {
 }
 
 ol {
-    font-size: 16px;
+    font-size: 14px;
+}
+
+ul {
+    font-size: 14px;
 }
 
 p {
@@ -16,6 +21,7 @@ p {
 }
 
 .button {
+    width: 150px;
     text-align: center;
     font-size: 16px;
 }
