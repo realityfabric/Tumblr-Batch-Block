@@ -1,9 +1,21 @@
 body {
-	width:250px;
-	text-align: left;
+    width:450px;
+    text-align: left;
 }
 
-#button {
-	text-align: center;
-	font-size: 20px;
+h1 {
+    text-align: center;
+}
+
+ol {
+    font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.button {
+    text-align: center;
+    font-size: 16px;
 }
