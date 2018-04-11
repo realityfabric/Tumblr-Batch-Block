@@ -10,11 +10,21 @@ This extension allows you to block many Tumblr bloggers at a time, and save time
 
 3. Click the extension icon. There will be a pop-up box.
 
-4. Click "Block the List".
+### Blocking
 
-5. Enter a comma separated list of blog names (eg "staff, testblog, gettingblocked", sans quotation marks).
+1. Click "Block the List".
 
-5. Leave the tab open until the extension has run through the entire list. You can switch tabs and continue surfing the web while it works.
+2. Enter a comma separated list of blog names (eg "staff, testblog, gettingblocked", sans quotation marks).
+
+3. Leave the tab open until the extension has run through the entire list. You can switch tabs and continue surfing the web while it works.
+
+### Exporting your blocklist
+
+1. Click "Export Blocklist".
+
+2. Wait for Tumblr Batch Block to collect all of the blogs you have blocked.
+
+3. A text box will appear at the top of the sidebar with a list of blogs you have blocked.
 
 ## Issues, Bugs, and Contributions
 

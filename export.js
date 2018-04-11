@@ -43,5 +43,12 @@ expandBlockList(function() {
 		blocklist = blocklist.replace('\"','');
 	}
 
-    prompt("Your blocklist:", blocklist);
+    // create a text area and insert it at the top of the sidebar
+    var right_column = document.getElementById('right_column');
+    var blockListTextArea = document.createElement('textarea');
+    blockListTextArea.setAttribute('id', 'blocklist');
+    blockListTextArea.style.background = 'white';
+    right_column.insertBefore(blockListTextArea, right_column.firstChild);
+
+    blockListTextArea.innerText = blocklist;
 });
