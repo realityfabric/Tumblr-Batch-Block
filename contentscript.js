@@ -80,6 +80,15 @@ var cleanBlocklist = function (newBlocks) {
     return reallyUniqueBlocks;
 }
 
+// returns the username at the top of the block list
+// this should be the last user who was blocked
+var getLastBlockedUser = function () {
+    blog = $("li.avatar_container:nth-child(1)");
+    blog_name = blog.getAttribute("data-tooltip");
+
+    return blog_name;
+}
+
 var activate = function () {
     console.log ("activate");
 
