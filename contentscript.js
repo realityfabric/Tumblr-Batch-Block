@@ -6,8 +6,11 @@ var openBlockList = function (blog) {
 }
 
 var block = function (blog) {
+    // fill the text box with the blog name
     $("#blocked_blogs > .accordion_content > .block-input > .text > #block").val(blog);
+    // pause to allow time between setting value and clicking
     setTimeout(function () {
+        // click the block button
         $("#blocked_blogs > .accordion_content > .block-input > .block-button").click();
     }, 500);
 }
@@ -98,9 +101,11 @@ var activate = function () {
         openBlockList(arr[0]);
 
         var i = 1;
+        // block one blog every x seconds
         var inter = setInterval (function () {
             console.log (i + " -- " + arr[i]);
             block(arr[i++]);
+            // stop blocking when you run out of blogs to block
             if (i >= arr.length) {
                 clearInterval(inter);
                 console.log ("exit");
