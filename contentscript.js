@@ -37,11 +37,6 @@ var activate = function () {
 						console.log("Added to blocklist: " + tumblelog);
 					}
 				}
-				else if (mutation.removedNodes.length > 0) {
-					if ((mutation.removedNodes[0]).getAttribute('data-tumblelog') !== null) {
-						console.log("Removed from blocklist: " + (mutation.removedNodes[0]).getAttribute('data-tumblelog'));
-					}
-				}
 			}
 		}
 	};
