@@ -1,7 +1,6 @@
-var openBlockList = function (blog) {
+var openBlockList = function () {
         $('document').ready( function () {
             $("#blocked_blogs > .accordion_trigger_wrapper > .accordion_trigger").click();
-            block(blog);
         });
 }
 
@@ -18,9 +17,9 @@ var activate = function () {
 	var usersToBeBlockedStr = usersToBeBlockedStr.replace(" ", "");
 	var usersToBeBlocked = usersToBeBlockedStr.split(",");
 
-	openBlockList(usersToBeBlocked[0]);
+	openBlockList();
 
-    var i = 1;
+    var i = 0;
     var inter = setInterval (function () {
         console.log (i + " -- " + usersToBeBlocked[i]);
         block(usersToBeBlocked[i++]);
