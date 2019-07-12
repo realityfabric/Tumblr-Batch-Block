@@ -12,14 +12,13 @@ var block = function (blog) {
     }, 500);
 }
 
-var str = window.prompt("Please input comma separated list of users to be blocked","");
-var str = str.replace(" ", "");
-
-var arr = str.split(",");
-
 var activate = function () {
     console.log ("activate");
-    openBlockList(arr[0]);
+	var str = window.prompt("Please input comma separated list of users to be blocked","");
+	var str = str.replace(" ", "");
+	var arr = str.split(",");
+
+	openBlockList(arr[0]);
 
     var i = 1;
     var inter = setInterval (function () {
