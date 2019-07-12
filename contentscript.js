@@ -14,17 +14,17 @@ var block = function (blog) {
 
 var activate = function () {
     console.log ("activate");
-	var str = window.prompt("Please input comma separated list of users to be blocked","");
-	var str = str.replace(" ", "");
-	var arr = str.split(",");
+	var usersToBeBlockedStr = window.prompt("Please input comma separated list of users to be blocked","");
+	var usersToBeBlockedStr = usersToBeBlockedStr.replace(" ", "");
+	var usersToBeBlocked = usersToBeBlockedStr.split(",");
 
-	openBlockList(arr[0]);
+	openBlockList(usersToBeBlocked[0]);
 
     var i = 1;
     var inter = setInterval (function () {
-        console.log (i + " -- " + arr[i]);
-        block(arr[i++]);
-        if (i >= arr.length) {
+        console.log (i + " -- " + usersToBeBlocked[i]);
+        block(usersToBeBlocked[i++]);
+        if (i >= usersToBeBlocked.length) {
             clearInterval(inter);
             console.log ("exit");
         }
