@@ -5,30 +5,38 @@ Colors used in icon:
 #FCC1B6
 */
 
+:root {
+	--body-width: 450px;
+	--footer-height: 20px;
+}
+
 body {
-    width:450px;
+    width: var(--body-width);
     text-align: left;
     background-color: lightblue;
 }
 
-h1 {
+header {
     text-align: center;
 }
 
-ol {
-    font-size: 14px;
+#controls {
+	width: 33%;
 }
 
-ul {
-    font-size: 14px;
-}
-
-p {
-    font-size: 20px;
-}
-
-.button {
-    width: 150px;
+#controls button {
+	width: 100%;
+	display: table-cell;
     text-align: center;
-    font-size: 16px;
+}
+
+footer {
+	height: var(--footer-height);
+}
+
+footer nav {
+	position: absolute;
+	right: 0;
+	bottom: calc(var(--footer-height) / 2); /* halfway between top and bottom of the footer*/
+	padding-right: 10px;
 }

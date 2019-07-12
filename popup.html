@@ -1,22 +1,34 @@
+<!DOCTYPE html>
 <html>
     <head>
-	<script src="popup.js"></script>
-	<script src="jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="popup.css" />
+		<script src="popup.js"></script>
+		<script src="jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="popup.css" />
     </head>
     <body>
-	<h1>Tumblr Batch Block</h1>
-	<h2>Instructions:</h2>
-	<ol>
-	    <li>Navigate to the 'Edit appearance' page for your blog.</li>
-	    <li>Click the button with the action you would like to take.</li>
-	</ol>
-	<h3>Please note:</h3>
-	<ul>
-	    <li>Both blocking and exporting may take some time, but you can continue to surf the web in another tab while the app runs.</li>
-	</ul>
-
-        <button class='button' id='blockButton'>Block</button>
-        <button class='button' id='exportBlockListButton'>Export Blocklist</button>
+		<header>
+			<h1>Tumblr Batch Block</h1>
+		</header>
+		<main>
+			<section id="instructions">
+				<h1>Instructions:</h1>
+				<ol>
+					<li>Navigate to the 'Edit appearance' page for your blog.</li>
+					<li>Click the button with the action you would like to take.</li>
+				</ol>
+				<p><strong>Please note:</strong> Both blocking and exporting may take some time, but you can continue to surf the web in another tab while the app runs. When exporting, the list will appear at the top of the page in the sidebar on the right.</p>
+			</section> <!-- end instructions -->
+			<section id="controls">
+				<h1>Controls</h1>
+					<button id='blockButton'>Block</button>
+					<button id='exportBlockListButton'>Export Blocklist</button>
+			</section> <!-- end controls -->
+        </main>
+        <footer>
+			<nav>
+				<a href="https://github.com/realityfabric/Tumblr-Batch-Block">Project Site</a>
+				<a href="https://github.com/realityfabric/Tumblr-Batch-Block/issues">Report an Issue</a>
+			</nav>
+        </footer>
     </body>
 </html>
