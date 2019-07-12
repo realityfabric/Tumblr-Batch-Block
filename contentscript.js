@@ -32,8 +32,9 @@ var activate = function () {
 					console.log("Error");
 				}
 				else if (mutation.addedNodes.length > 0) {
-					if ((mutation.addedNodes[0]).getAttribute('data-tumblelog') !== null) {
-						console.log("Added to blocklist: " + (mutation.addedNodes[0]).getAttribute('data-tumblelog'));
+					var tumblelog = (mutation.addedNodes[0]).getAttribute('data-tumblelog');
+					if (tumblelog !== null) {
+						console.log("Added to blocklist: " + tumblelog);
 					}
 				}
 				else if (mutation.removedNodes.length > 0) {
