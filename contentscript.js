@@ -14,7 +14,6 @@ var block = function (blog) {
 var activate = function () {
     console.log ("activate");
 	var usersToBeBlockedStr = window.prompt("Please input comma separated list of users to be blocked","");
-	var usersToBeBlockedStr = usersToBeBlockedStr.replace(" ", "");
 	var usersToBeBlocked = usersToBeBlockedStr.split(",");
 
 	openBlockList();
