@@ -1,3 +1,9 @@
+# This extension is no longer being developed.
+
+I am no longer on Tumblr. I apologize for the inconvenience this causes people as Tumblr makes changes that might break TBB.
+
+If anyone wants to continue development for this project, it is licensed as AGPL3 and I would love to see it continue. If you are interested in continuing development of TBB and have questions, feel free to reach out to me at realityfabric@gmail.com.
+
 # Tumblr Batch Block
 
 This extension allows you to block many Tumblr bloggers at a time, and save time doing it. You can input lists you've created yourself, or use lists others have created and shared with you.
